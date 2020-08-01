@@ -239,7 +239,8 @@ async function updateEmployeeRole() {
 
   console.log("Updated employee's role");
 
-  loadMainPrompts();
+  // loadMainPrompts();
+  updateEmployeeManager();
 }
 
 async function updateEmployeeManager() {
@@ -272,7 +273,7 @@ async function updateEmployeeManager() {
       name: "managerId",
       message:
         "Which employee do you want to set as manager for the selected employee?",
-      choices: managerChoices
+      choices: managerChoices.concat([{name: "none", value: null}])
     }
   ]);
 
