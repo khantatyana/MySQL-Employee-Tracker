@@ -2,6 +2,8 @@
 
 This application was architected and built as a solution for managing a company's employees using node, inquirer, and MySQL. This interface is known as **C**ontent **M**anagement **S**ystems.
 
+https://drive.google.com/file/d/14g2VK5CPcmv9ZZZ604ljnnXfp8h1RdgA/view
+
 ## Description
 
 Database schema containing three tables: employee, department and role.
@@ -32,13 +34,9 @@ I want to be able to view and manage the departments, roles, and employees in my
 So that I can organize and plan my business
 ```
 
-![Employee Tracker](Assets/employee-tracker.gif)
+![Employee Tracker](Assets/video.gif)
 
-## Minimum Requirements
-
-* Functional application.
-
-* GitHub repository with a unique name and a README describing the project.
+## Functionality:
 
 * The command-line application should allow users to:
 
@@ -48,15 +46,9 @@ So that I can organize and plan my business
 
   * Update employee roles
 
-## Bonus
-
-* The command-line application should allow users to:
-
   * Update employee managers
-
-  * View employees by manager
 
   * Delete departments, roles, and employees
 
-  * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
+  * View the total utilized budget of a department / aggregated salary -- ie the combined salaries of all employees in that department
 
