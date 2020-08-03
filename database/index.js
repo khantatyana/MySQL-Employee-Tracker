@@ -24,6 +24,24 @@ class Database {
     }
     newEmployee(employee) {
         return this.connection.query("INSERT INTO employee SET ?", employee);
-      }
+    }
+    newRoleFunc(newRole) {
+        return this.connection.query("INSERT INTO role SET ?", newRole);
+    }
+    deleteRole(role_id) {
+        return this.connection.query("DELETE FROM role WHERE id = ?", role_id);
+    }
+    deleteDpt(dptId) {
+        return this.connection.query("DELETE FROM department WHERE id = ?", dptId);
+    }
+    deleteEmployee(empId){
+        return this.connection.query("DELETE FROM employee WHERE id = ?", empId);
+    }
+    updtEmpRole(updtRoleId, updtManId, emplId) {
+        return this.connection.query("UPDATE employee SET role_id = ?, manager_id = ? WHERE id = ?;", [updtRoleId, updtManId, emplId]);
+    }
+    updtManager(updtManId, emplId){
+        return this.connection.query("UPDATE employee SET manager_id = ? WHERE id = ?;", [updtManId, emplId]);
+    }
 }
 module.exports = new Database(connection);
