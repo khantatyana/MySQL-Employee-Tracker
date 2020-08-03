@@ -2,7 +2,7 @@
 
 This application was architected and built as a solution for managing a company's employees using node, inquirer, and MySQL. This interface is known as **C**ontent **M**anagement **S**ystems.
 
-![Video is here](https://drive.google.com/file/d/14g2VK5CPcmv9ZZZ604ljnnXfp8h1RdgA/view)
+[Video is here](https://drive.google.com/file/d/14g2VK5CPcmv9ZZZ604ljnnXfp8h1RdgA/view)
 
 ## Description
 
